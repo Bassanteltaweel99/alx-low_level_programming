@@ -14,5 +14,5 @@ while (*s != '\0')
 longi++;
 s++;
 }
-return (0);
+return (longi);
 }

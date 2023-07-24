@@ -6,7 +6,7 @@
 
 int _putchar(char c);
 void reset_to_98(int *n);
-void swp_int(int *a, int *b);
+void swap_int(int *a, int *b);
 int _strien(char *s);
 void _puts(char *str);
 void print_rev(char *s);

@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 /**
  * infinite_add - add 2 strings.
@@ -10,7 +10,8 @@
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-int a_len = 0, b_len = 0, carry = 0, a, b, sum, biggest;	
+	int a_len = 0, b_len = 0, carry = 0, a, b, sum, biggest;
+	
 	while (n1[a_len] != '\0')
 		a_len++;
 	while (n2[b_len] != '\0')
@@ -22,6 +23,7 @@ int a_len = 0, b_len = 0, carry = 0, a, b, sum, biggest;
 	if ((biggest + 1) >= size_r)
 		return (0);
 	r[biggest + 1] = '\0';
+	
 	while (biggest >= 0)
 	{
 		a = (n1[a_len - 1] - '0');
@@ -34,6 +36,7 @@ int a_len = 0, b_len = 0, carry = 0, a, b, sum, biggest;
 			sum = a + carry;
 		else
 			sum = carry;
+		
 		if (sum > 9)
 		{
 			carry = sum / 10;

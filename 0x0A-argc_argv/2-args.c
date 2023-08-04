@@ -1,11 +1,8 @@
 #include <stdio.h>
 /**
- * main - Write a program that prints all arguments it receives
- *        All arguments should be printed, including the first on
- *
- * @argc: This is the argument count 
- * @argv: This is the argument vector
- *
+* main - print all arguments it recevies
+* @argc: number of arguments
+ * @argv: array of arguments
  * Return: 0;
  */
 int main(int argc, char *argv[])
